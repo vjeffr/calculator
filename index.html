@@ -26,50 +26,44 @@
         <!-- YOUR CONTENT GOES HERE -->
         <h1>Threat of Deportation and Toxic Stress for Children</h1>
 
-        <h2>ACE Score Survey</h2>
+        <h2>ACE and Deportation Survey</h2>
 
 
-        <form name="test" class="quiz">
-        <input type="text" class="question">    1. Before the age of 18, has one of your parents or both parents been deported?
-            <p>
-            <button id="firstQuestionY" class="button" value="Yes">Yes</button>
-              <button id="firstQuestionN" class="button" value="No">No</button>
-            </p>
-</input>
-            2. Before the age of 18, has one of your friends been deported?
-            <p>
-              <button id="secondQuestionY" class="button" value="Yes">Yes</button>
-                <button id="secondQuestionN" class="button" value="No">No</button>
-            </p>
-
-            3. Were you ever part of a governmental protection preogram for undocumneted immigrants such as DACA?
-
-            <p>
-              <button id="thirdQuestionY" class="button" value="Yes">Yes</button>
-                <button id="thirdQuestionN" class="button" value="No">No</button>
-
-            </p>
-
-            4. Before the age of 18, were you ever detained and then released?
-
-            <p>
-              <button id="fourthQuestionY" class="button" value="Yes">Yes</button>
-                <button id="fourthQuestionN" class="button" value="No">No</button>
-
-            </p>
-
-            5. Before the age of 18, has one of your parents or both parents been detained and then released?
-
-            <p>
-              <button id="fifthQuestionY" class="button" value="Yes">Yes</button>
-                <button id="fifthQuestionN" class="button" value="No">No</button>
-            </p>
-        </form>
-
-        <!-- Your javascript should be called here -->
+        <form>
+              <div class="question">
+                <p>1. Before the age of 18, has one of your parents or both parents been deported?</p>
+                <button class="yes" value="yes">Yes</button>
+                <button value="no">No</button>
+              </div>
+              <div class="question">
+                <p>2. Before the age of 18, has one of your friends been deported?</p>
+                <button class="yes" value="yes">Yes</button>
+                <button value="no">No</button>
+              </div>
+              <div class="question">
+                <p>3. Were you ever part of a governmental protection preogram for undocumneted immigrants such as DACA?</p>
+                <button class="yes" value="yes">Yes</button>
+                <button value="no">No</button>
+              </div>
+              <div class="question">
+                <p>4. Before the age of 18, were you ever detained and then released?</p>
+                <button class="yes" value="yes">Yes</button>
+                <button value="no">No</button>
+              </div>
+              <div class="question">
+                <p>5. Before the age of 18, has one of your parents or both parents been detained and then released?</p>
+                <button class="yes" value="yes">Yes</button>
+                <button value="no">No</button>
+              </div>
+            </form>
 
 
-        <p><span class="yes_results">0</span> Yeses &ndash; <span class="no_results">0</span> Nos</p>
+
+
+        <button class="all">Total</button>
+      <div class="total">
+        <p>Total Yes: <span></span></p>
+      </div>
 
 
 

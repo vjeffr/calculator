@@ -1,15 +1,13 @@
 $(document).ready(function () {
-
-$(".button").on("click", function (e) {
-  e.preventDefault();
-  var yesAnswer=0;
-  var noAnswer=0;
-$("input").each(function (){
-  if ($(this).val()=="Yes"){
-  yesAnswer++;
-  }
-console.log(yesAnswer);
-});
-
- });
+    var allYeses = 0;
+    $("button").on("click", function () {
+        $(this).prop("disabled", true);
+        if ($(this).val() === 'yes') {
+            allYeses++;
+        }
+        console.log(allYeses);
+    });
+    $(".all").on("click", function () {
+        $(".total").find("span").text(allYeses);
+    });
 });
