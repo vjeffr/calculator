@@ -15,41 +15,75 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /* Start your base/mobile styles here */
 
 .container {
-  max-width: 750px;
+  max-width: 800px;
   padding: 10px;
   margin: 10% auto 10% auto;
   height: auto;
 }
 
-
-.test, .testHeader {
-  max-width: 85%;
+.article-text {
+  max-width: 95%;
   padding: 10px;
   margin: 10px 0px 10px 0px;
   height: auto;
 }
 
+.interactive-section {
+  max-width: 85%;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  height: auto;
+
+}
+
+.test, .testHeader, .results  {
+  max-width: 95%;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  height: auto;
+  align-content: center;
+}
+
 .test {
   background-color: #cce0ff;
+  border: 2px;
+  border-color: #f1e8d9;
+  border-style: solid;
 }
 
 .testHeader {
 font-size: 1.8em;
 clear: both;
 background-color: #f1e8d9;
+border: 2px;
+border-color: #cce0ff;
+border-style: solid;
+}
+
+.button {
+  margin: 20px 0px 0px 0px;
 }
 
 .results {
-  max-width: 85%;
-  padding: 10px;
-  margin: 10px 0px 0px 0px;
-  height: auto;
-  background-color: #f1e8d9;
+  background-color: #cce0ff;
+  border: 2px;
+  border-color: #f1e8d9;
+  border-style: solid;
 }
 
 .byline {
 font-size: 12px;
-text-align:center;
+/* margin: 0px 0px 10px 0px; */
+}
+
+.hold-image {
+  position: relative;
+  max-width: 95%;
+  margin: 10px 0px 0px 0px;
+}
+
+.hold-image img{
+  width: 100%;
 }
 
 #caption {
@@ -61,18 +95,7 @@ text-align:center;
   color: #625D5D;
 }
 
-.text {
-  clear: both;
-}
 
-.space {
-  padding: 10px;
-  /* height: auto; */
-}
-
-/* body {
-  background-color: #89cff0; */
-}
 * {
     box-sizing: border-box;
 }
@@ -82,9 +105,6 @@ html, body {
     font-size: 16px;
 }
 
-h1 {
-  text-align:center
-}
 
 
 
