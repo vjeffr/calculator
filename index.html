@@ -23,89 +23,109 @@
     </head>
 
     <body>
-        <!-- YOUR CONTENT GOES HERE -->
+<div class="container">
+<!-- Part I, STORY PORTION -->
+
         <h1>Threat of Deportation and Toxic Stress for Children</h1>
 
-        <h2>ACE and Deportation Survey</h2>
+<div class="byline">By Virginia Jeffries, Irene Spezzamonte, and Aliyah Veal
+</div>
+<!-- closes byline div -->
 
+
+<div class="photo">
+<img src="images/deportationChild.jpg">
+</div>
+
+
+<div id="caption">Change this!!! Father Gregory Saroufeem, 38, counsels a parishioner after a Sunday service.</div>
+<!-- closes caption div -->
+       <div class="credit">Irene Spezzamonte/NYC News Service
+        </div>
+        <!-- closes credit div -->
+
+
+<div class="testHeader">
+Take the Survey
+</div>
+<!-- closes testHeader -->
+
+<!-- Part II, CALCULATOR PORTION begins here-->
+<div class="test">
 
         <form>
               <div class="question">
-                <p>1. Before the age of 18, has one of your parents or both parents been deported?</p>
+                <p>1. Before the age of 18, did you experience a separation from a parent for a long period of time due to immigration status?</p>
                 <input type="radio" name="firstQuestion" value="yes">Yes<br/>
                 <input type="radio" name="firstQuestion" value="no">No<br/>
               </div>
               <div class="question">
-                <p>2. Before the age of 18, has one of your friends been deported?</p>
+                <p>2. Before the age of 18, was a member of your immediate or extended family deported?</p>
                 <input type="radio" name="secondQuestion" value="yes">Yes<br/>
                 <input type="radio" name="secondQuestion" value="no">No<br/>
               </div>
               <div class="question">
-                <p>3. Were you ever part of a governmental protection preogram for undocumneted immigrants such as DACA?</p>
+                <p>3.Before the age of 18, were you ever enrolled in a governmental protection preogram for undocumneted immigrants such as DACA?</p>
                 <input type="radio" name="thirdQuestion" value="yes">Yes<br/>
                 <input type="radio" name="thirdQuestion" value="no">No<br/>
               </div>
               <div class="question">
-                <p>4. Before the age of 18, were you ever detained and then released?</p>
+                <p>4. Before the age of 18, did a parent leave his or her job due to immigration status?</p>
                 <input type="radio" name="fourthQuestion" value="yes">Yes<br/>
                 <input type="radio" name="fourthQuestion" value="no">No<br/>
-              </div>
-              <div class="question">
-                <p>5. Before the age of 18, has one of your parents or both parents been detained and then released?</p>
-                <input type="radio" name="fifthQuestion" value="yes">Yes<br/>
-                <input type="radio" name="fifthQuestion" value="no">No<br/>
               </div>
             </form>
 
 
+      <div class="space">
         <button class="all">See Your Results</button>
+      </div>
       <div class="total">
         <!-- <p> <span></span>questions, so your risk of</p>
         <p> -->
       </div>
 
-
-      <!-- PART II of the page, begins here: -->
-
-
-                <h2>Based on your score, your risk of developing</h2>
+    </div>
+    <!-- This closes test div -->
 
 
-                  <div id="cardiovascular" class="results">
-                      Cardiovascular disease is
-                      <span></span>% higher than someone with an ACE score of 0.
+      <!-- PART III of the page, RESULTS, begins here: -->
+<div class="results">
+
+                <h2>Based on your score, your risk of experiencing</h2>
+
+
+                  <div id="headache" class="results">
+                       Chronic headaches in adulthood is elevated by
+                      <span></span>%
                   </div>
-                </p>
 
-                <p>
                   <div id="diabetes" class="results">
-                      Diabetes is
-                      <span></span>% higher than someone with an ACE score of 0.
+                    Type II diabetes in adulthood is elevated by
+                      <span></span>%
                   </div>
-                </p>
 
-                <p>
-                  <div id="asthma" class="results">
-                      Asthma is
-                      <span></span>% higher than someone with an ACE score of 0.
+                  <div id="respDisease" class="results">
+                    Respiratory disease in adulthood is elevated by
+                      <span></span>%
                   </div>
-                </p>
 
-                <p>
-                  <div id="fracture" class="results">
-                      Bone fractures is
-                      <span></span>% higher than someone with an ACE score of 0.
+                  <div id="miscarriage" class="results">
+                      Miscarriage or stillbirth in adulthood if you become pregnant is elevated by
+                    <span></span>%
                   </div>
-                </p>
 
-                <p>
                   <div id="depression" class="results">
-                      Major depressive disorder is
-                      <span></span>% higher than someone with an ACE score of 0.
+                      Major depressive disorder in adulthood is elevated by
+                      <span></span>%
                   </div>
-                </p>
 
 
+</div>
+<!-- closes results div -->
+
+</div>
+<!-- Closes container div -->
 
         <!-- Your javascript should be called here -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

@@ -7,67 +7,69 @@ $(document).ready(function() {
 
 
 
-      // Results or PART II of the page
+      // PART II, RESULTS
 
-// This is the code for cardiovascular disease
+// This is the code for STROKE
 
-      if (yes === 1){
-        $("#cardiovascular").find("span").text("52");
+      if (yes === 0){
+        $("#headache").find("span").text("0");
+      } else if (yes === 1){
+        $("#headache").find("span").text("20");
       } else if (yes === 2){
-        $("#cardiovascular").find("span").text("103");
+        $("#headache").find("span").text("40");
       } else if (yes === 3){
-        $("#cardiovascular").find("span").text("99");
-      } else if (yes === 4) {
-        $("#cardiovascular").find("span").text("107");
+        $("#headache").find("span").text("70");
       } else {
-        $("#cardiovascular").find("span").text("107");
+        $("#headache").find("span").text("100 - 110");
       }
 
-// This will be the code for Diabetes.
+// code for DIABETES.
 
-      if (yes === 1){
-        $("#diabetes").find("span").text("17");
+      if (yes === 0){
+        $("#diabetes").find("span").text("0");
+      } else if (yes === 1){
+        $("#diabetes").find("span").text("13");
       } else if (yes === 2){
         $("#diabetes").find("span").text("33");
       } else if (yes === 3){
-        $("#diabetes").find("span").text("44");
-      } else if (yes === 4) {
-        $("#diabetes").find("span").text("67");
+        $("#diabetes").find("span").text("33");
       } else {
-        $("#diabetes").find("span").text("67");
+        $("#diabetes").find("span").text("199");
       }
 
-// ASTHMA
+// RESPIRATORY DISEASE
 
-      if (yes === 1){
-        $("#asthma").find("span").text("10");
+      if (yes === 0){
+        $("#respDisease").find("span").text("0");
+      } else if (yes === 1){
+        $("#respDisease").find("span").text("22");
       } else if (yes === 2){
-        $("#asthma").find("span").text("20");
+        $("#respDisease").find("span").text("83");
       } else if (yes === 3){
-        $("#asthma").find("span").text("30");
-      } else if (yes === 4) {
-        $("#asthma").find("span").text("35");
+        $("#respDisease").find("span").text("83");
       } else {
-        $("#asthma").find("span").text("35");
+        $("#respDisease").find("span").text("250");
       }
 
-      // FRACTURES
+      // MISCARRIAGE/stillbirth
 
-            if (yes === 1){
-              $("#fracture").find("span").text("15");
+            if (yes === 0){
+              $("#miscarriage").find("span").text("0");
+            } else if (yes === 1){
+              $("#miscarriage").find("span").text("20");
             } else if (yes === 2){
-              $("#fracture").find("span").text("120");
+              $("#miscarriage").find("span").text("20");
             } else if (yes === 3){
-              $("#fracture").find("span").text("200");
-            } else if (yes === 4) {
-              $("#fracture").find("span").text("400");
+              $("#miscarriage").find("span").text("40");
             } else {
-              $("#fracture").find("span").text("35");
+              $("#miscarriage").find("span").text("70");
             }
 
 // DEPRESSION
 
-            if (yes === 1){
+            if (yes === 0){
+              $("#depression").find("span").text("0");
+            } else if (yes === 1){
               $("#depression").find("span").text("12");
             } else if (yes === 2){
               $("#depression").find("span").text("35");
