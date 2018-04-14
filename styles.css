@@ -21,8 +21,9 @@ You will find this is far easier than the opposite task of using CSS to cram you
   height: auto;
 }
 
+
 .article-text {
-  max-width: 95%;
+  max-width: 90%;
   padding: 10px;
   margin: 10px 0px 10px 0px;
   height: auto;
@@ -33,13 +34,12 @@ You will find this is far easier than the opposite task of using CSS to cram you
   padding: 10px;
   margin: 10px 0px 10px 0px;
   height: auto;
-
 }
 
-.test, .testHeader, .results  {
+.test, .testHeader, .result, .results, .blurb {
   max-width: 95%;
   padding: 10px;
-  margin: 10px 0px 10px 0px;
+  margin: 20px 0px 20px 0px;
   height: auto;
   align-content: center;
 }
@@ -47,16 +47,16 @@ You will find this is far easier than the opposite task of using CSS to cram you
 .test {
   background-color: #cce0ff;
   border: 2px;
-  border-color: #f1e8d9;
+  border-color: black;
   border-style: solid;
 }
 
 .testHeader {
 font-size: 1.8em;
-clear: both;
+text-align: center;
 background-color: #f1e8d9;
 border: 2px;
-border-color: #cce0ff;
+border-color: black;
 border-style: solid;
 }
 
@@ -64,10 +64,10 @@ border-style: solid;
   margin: 20px 0px 0px 0px;
 }
 
-.results {
+.result {
   background-color: #cce0ff;
   border: 2px;
-  border-color: #f1e8d9;
+  border-color: black;
   border-style: solid;
 }
 
@@ -78,11 +78,11 @@ font-size: 12px;
 
 .hold-image {
   position: relative;
-  max-width: 95%;
+  max-width: 90%;
   margin: 10px 0px 0px 0px;
 }
 
-.hold-image img{
+.hold-image img {
   width: 100%;
 }
 
@@ -104,10 +104,6 @@ html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
 }
-
-
-
-
 
 
 
