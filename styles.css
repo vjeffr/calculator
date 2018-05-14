@@ -35,14 +35,17 @@ You will find this is far easier than the opposite task of using CSS to cram you
   border: 2px;
   border-color: black;
   border-style: solid;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .test {
   background-color: #cce0ff;
+
 }
 
 .testHeader {
 font-size: 1.6em;
+font-weight: bold;
 text-align: center;
 background-color: #f1e8d9;
 }
@@ -57,11 +60,15 @@ background-color: #f1e8d9;
 
 .results {
   padding: 10px 0px 10px 0px;
-
+font-family: 'Helvetica', sans-serif;
 }
 
-.byline, .credit, .caption{
+.byline, #credit, .caption{
 font-size: 1em;
+}
+
+#credit, .caption{
+font-family: 'Helvetica', sans-serif;
 }
 
 .hold-image {
@@ -78,6 +85,62 @@ font-size: 1em;
   color: #625D5D;
 }
 
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+cite {
+margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+blockquote {
+  font-family: 'PT Sans Narrow', sans-serif;
+  width: 75%;
+  text-align: center;
+  padding: 0px;
+  margin: 30px auto 30px auto;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  position: relative;
+  }
+
+  blockquote p::before, blockquote p::after {
+    font-size: 5em;
+    color: #D07E50;
+    font-family: 'arial';
+    position: absolute;
+  }
+
+  blockquote p::before {
+    content: '\201c';
+    display: inline-block;
+    padding-right: 10px;
+    left: -20px;
+  }
+
+  blockquote p::after {
+    content: '\201d';
+    padding-left: 25px;
+    bottom: 40px;
+  }
+
+  blockquote footer cite {
+  font-family: 'Helvetica', sans-serif;
+  font-size: .8em;
+  font-style: normal;
+  line-height: 1.2em;
+  text-align: right;
+  color: #888;
+  padding-top: 20px;
+  }
 
 * {
     box-sizing: border-box;
@@ -95,8 +158,35 @@ html, body {
 
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+blockquote {
+  width: 80%;
+  font-size: 1.6em;
+}
+blockquote p::before {
+  left: 25px;
+}
 }
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+
+
+blockquote {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  blockquote p::before {
+    left: -45px;
+  }
+
+
+  blockquote footer cite {
+    position: relative;
+    right: 100px;
+    font-size: .75em;
+  }
+
 }
