@@ -1,16 +1,35 @@
-$(document).ready(function() {
-  $(".all").on("click", function(e){
-     e.preventDefault();
+var yes,
+no;
 
-      var yes = $("[value='yes']:checked").length;
-      var no = $("[value='no']:checked").length;
+$(document).ready(function(){
+    $(".question [type='radio']").on("click", function(e){
+      var this_button = $(this),
+      yes = $("[value='yes']:checked").length;
+      no = $("[value='no']:checked").length;
+        question = this_button.closest(".question"),
+        next_question = question.next(".question");
+
+        if(next_question.length > 0){
+          next_question.addClass("active");
+          scrollToElement(next_question);
+        } else{
+          // we're done. show me the results
+          calculateResults();
+          $(".result").addClass("active")
+          scrollToElement($(".result"));
+        }
+    });
+});
+
+function scrollToElement(element){
+  $("html, body").animate({
+    scrollTop: element.offset().top
+  });
+}
 
 
-
-      // PART II, RESULTS
-
-// This is the code for STROKE
-
+function calculateResults(){
+  // This is the code for STROKE
       if (yes === 0){
         $("#headache").find("span").text("0");
       } else if (yes === 1){
@@ -22,9 +41,7 @@ $(document).ready(function() {
       } else {
         $("#headache").find("span").text("100 - 110");
       }
-
 // code for DIABETES.
-
       if (yes === 0){
         $("#diabetes").find("span").text("0");
       } else if (yes === 1){
@@ -36,10 +53,8 @@ $(document).ready(function() {
       } else {
         $("#diabetes").find("span").text("199");
       }
-
 // RESPIRATORY DISEASE
-
-      if (yes === 0){
+     if (yes === 0){
         $("#respDisease").find("span").text("0");
       } else if (yes === 1){
         $("#respDisease").find("span").text("22");
@@ -50,9 +65,7 @@ $(document).ready(function() {
       } else {
         $("#respDisease").find("span").text("250");
       }
-
       // MISCARRIAGE/stillbirth
-
             if (yes === 0){
               $("#miscarriage").find("span").text("0");
             } else if (yes === 1){
@@ -64,9 +77,7 @@ $(document).ready(function() {
             } else {
               $("#miscarriage").find("span").text("70");
             }
-
 // DEPRESSION
-
             if (yes === 0){
               $("#depression").find("span").text("0");
             } else if (yes === 1){
@@ -80,6 +91,4 @@ $(document).ready(function() {
             } else {
               $("#depression").find("span").text("110");
             }
-
-  });
-});
+}

@@ -40,7 +40,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 .test {
   background-color: #cce0ff;
-
 }
 
 .testHeader {
@@ -60,11 +59,11 @@ background-color: #f1e8d9;
 
 .results {
   padding: 10px 0px 10px 0px;
-font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .byline, #credit, .caption{
-font-size: 1em;
+  font-size: 1em;
 }
 
 #credit, .caption{
@@ -95,7 +94,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 cite {
-margin: 0;
+  margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
@@ -110,7 +109,7 @@ blockquote {
   font-size: 1.3em;
   line-height: 1.8em;
   position: relative;
-  }
+}
 
   blockquote p::before, blockquote p::after {
     font-size: 5em;
@@ -152,20 +151,45 @@ html, body {
 }
 
 
+.question {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(25, 255, 25, 1);
+  padding: 10px;
+  display: none;
+  margin: 0 auto;
+}
 
+.result {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(25, 255, 25, 1);
+  padding: 10px;
+  display: none;
+  margin: 0 auto;
+}
+
+.question.active, .result.active{
+  display: block;
+}
+
+.question p{
+  font-size: 2em;
+  line-height: 1.2em;
+}
 
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 
-blockquote {
-  width: 80%;
-  font-size: 1.6em;
-}
-blockquote p::before {
-  left: 25px;
-}
+  blockquote {
+    width: 80%;
+    font-size: 1.6em;
+  }
+  blockquote p::before {
+    left: 25px;
+  }
 }
 
 @media(min-width: 729px) {
