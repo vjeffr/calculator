@@ -1,11 +1,6 @@
-var yes,
-no;
-
 $(document).ready(function(){
     $(".question [type='radio']").on("click", function(e){
       var this_button = $(this),
-      yes = $("[value='yes']:checked").length;
-      no = $("[value='no']:checked").length;
         question = this_button.closest(".question"),
         next_question = question.next(".question");
 
@@ -29,7 +24,9 @@ function scrollToElement(element){
 
 
 function calculateResults(){
-  // This is the code for STROKE
+  var yes = $("[value='yes']:checked").length,
+  no = $("[value='no']:checked").length;
+  // This is the code for headache
       if (yes === 0){
         $("#headache").find("span").text("0");
       } else if (yes === 1){
