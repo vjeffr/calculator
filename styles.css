@@ -196,15 +196,6 @@ html, body {
   blockquote p::before {
     left: 25px;
   }
-
-  .result {
-    width: 100%;
-    height: 100vh;
-    background-color: 	#C0C0C0;
-    padding: 10px;
-    display: none;
-    margin: 0 auto;
-  }
 }
 
 @media(min-width: 729px) {
